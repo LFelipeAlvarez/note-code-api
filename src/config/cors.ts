@@ -1,6 +1,6 @@
+import { CLIENT_URL } from './envs'
 
-export const FRONTEND_URL = 'http://localhost:5173'
-const allowedOrigins = [FRONTEND_URL]
+const allowedOrigins = [CLIENT_URL]
 export const corsOptions = {
   origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
     // Si no se proporciona un origen (por ejemplo, solicitudes desde el propio servidor), permitir el acceso
