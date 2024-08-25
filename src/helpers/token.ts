@@ -10,7 +10,7 @@ export const signToken = async (user: User): Promise<string> => {
     },
     SECRET_JWT_KEY as string,
     {
-      expiresIn: '7d'
+      expiresIn: '15s'
     }
   )
 }
